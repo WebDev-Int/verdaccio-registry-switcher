@@ -1,0 +1,17 @@
+storage: ./storage
+auth:
+  htpasswd:
+    file: ./htpasswd
+web:
+  enable: true
+  title: Verdaccio
+  banner: Welcome to Verdaccio
+packages:
+  '@*/*':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+logs:
+  - { type: stdout, format: pretty, level: http }
+  - { type: file, path: verdaccio.log, level: info }
+listen: http://localhost:4873

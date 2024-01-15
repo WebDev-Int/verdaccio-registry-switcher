@@ -8,7 +8,8 @@ This simple script helps you switch between using a local Verdaccio registry and
 
 1. Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-2. Download the `switch-registry.js` script from this repository.
+2. Download the `switch-registry.js` script from this repository. be sure to do a 
+```npm install```
 
 3. Open a terminal or command prompt.
 
